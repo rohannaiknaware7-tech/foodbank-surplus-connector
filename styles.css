@@ -1,0 +1,1026 @@
+:root {
+
+    --primary: #2563eb;
+    --primary-dark: #1d4ed8;
+    --accent: #fbbf24;
+    --background: #f8fafc;
+    --dark: #0f172a;
+    --text: #334155;
+    --muted: #64748b;
+    --white: #ffffff;
+    --success: #16a34a;
+    --danger: #dc2626;
+
+    --radius: 14px;
+
+    --shadow:
+        0 10px 30px rgba(15, 23, 42, 0.08);
+
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    margin: 0;
+
+    font-family:
+        "Poppins",
+        Arial,
+        sans-serif;
+
+    background-color: var(--background);
+
+    color: var(--text);
+
+    line-height: 1.7;
+
+}
+
+
+/* =========================================================
+   TYPOGRAPHY
+========================================================= */
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+
+    color: var(--dark);
+
+    font-weight: 700;
+
+}
+
+
+p {
+
+    color: var(--text);
+
+}
+
+
+.section-heading {
+
+    max-width: 700px;
+
+    margin: 0 auto 50px;
+
+}
+
+
+.section-heading span {
+
+    color: var(--primary);
+
+    font-size: 0.85rem;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+}
+
+
+.section-heading h2 {
+
+    font-size: 2.3rem;
+
+    margin-top: 8px;
+
+}
+
+
+.section-heading p {
+
+    color: var(--muted);
+
+}
+
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+.navbar {
+
+    background: rgba(15, 23, 42, 0.97);
+
+    padding: 14px 0;
+
+    box-shadow:
+        0 3px 15px rgba(0, 0, 0, 0.1);
+
+}
+
+
+.navbar-brand {
+
+    font-size: 1.3rem;
+
+}
+
+
+.navbar-brand i {
+
+    color: var(--accent);
+
+}
+
+
+.nav-link {
+
+    color: #e2e8f0 !important;
+
+    margin-left: 8px;
+
+    transition: 0.3s;
+
+}
+
+
+.nav-link:hover,
+.nav-link.active {
+
+    color: var(--accent) !important;
+
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero-section {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 130px 0 80px;
+
+    color: white;
+
+    background:
+
+        radial-gradient(
+            circle at top right,
+            rgba(37, 99, 235, 0.5),
+            transparent 40%
+        ),
+
+        linear-gradient(
+            135deg,
+            #0f172a,
+            #1e3a8a
+        );
+
+}
+
+
+.hero-section h1 {
+
+    color: white;
+
+}
+
+
+.hero-section p {
+
+    color: #dbeafe;
+
+}
+
+
+.hero-badge {
+
+    display: inline-block;
+
+    background: rgba(255,255,255,0.12);
+
+    border: 1px solid rgba(255,255,255,0.2);
+
+    padding: 8px 15px;
+
+    border-radius: 30px;
+
+    color: white;
+
+}
+
+
+.hero-card {
+
+    background: white;
+
+    color: var(--text);
+
+    padding: 45px;
+
+    border-radius: 20px;
+
+    box-shadow: var(--shadow);
+
+    text-align: center;
+
+}
+
+
+.hero-card p {
+
+    color: var(--muted);
+
+}
+
+
+.hero-stats {
+
+    display: flex;
+
+    gap: 40px;
+
+    flex-wrap: wrap;
+
+}
+
+
+.hero-stats div {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+
+.hero-stats strong {
+
+    font-size: 1.7rem;
+
+    color: var(--accent);
+
+}
+
+
+.hero-stats span {
+
+    color: #cbd5e1;
+
+    font-size: 0.85rem;
+
+}
+
+
+/* =========================================================
+   NOTICE
+========================================================= */
+
+.notice-section {
+
+    padding: 15px 0;
+
+    background: white;
+
+    border-bottom: 1px solid #e2e8f0;
+
+}
+
+
+/* =========================================================
+   SECTION
+========================================================= */
+
+.section-padding {
+
+    padding: 90px 0;
+
+}
+
+
+/* =========================================================
+   ABOUT
+========================================================= */
+
+.about-image {
+
+    min-height: 350px;
+
+}
+
+
+.image-placeholder {
+
+    height: 350px;
+
+    border-radius: var(--radius);
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #dbeafe,
+            #bfdbfe
+        );
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    color: var(--primary);
+
+    box-shadow: var(--shadow);
+
+}
+
+
+.image-placeholder i {
+
+    font-size: 80px;
+
+}
+
+
+.feature-list {
+
+    list-style: none;
+
+    padding: 0;
+
+}
+
+
+.feature-list li {
+
+    margin-bottom: 12px;
+
+}
+
+
+.feature-list i {
+
+    color: var(--success);
+
+    margin-right: 8px;
+
+}
+
+
+/* =========================================================
+   COURSE CARDS
+========================================================= */
+
+.course-card {
+
+    height: 100%;
+
+    background: white;
+
+    border: none;
+
+    border-radius: var(--radius);
+
+    box-shadow: var(--shadow);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+
+}
+
+
+.course-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 18px 40px rgba(15,23,42,0.14);
+
+}
+
+
+.course-icon {
+
+    width: 65px;
+
+    height: 65px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background: #eff6ff;
+
+    color: var(--primary);
+
+    font-size: 30px;
+
+}
+
+
+/* =========================================================
+   ADMISSION
+========================================================= */
+
+.admission-section {
+
+    background: #eff6ff;
+
+}
+
+
+.admission-steps {
+
+    list-style: none;
+
+    padding: 0;
+
+    counter-reset: admission;
+
+}
+
+
+.admission-steps li {
+
+    counter-increment: admission;
+
+    position: relative;
+
+    padding:
+        15px 15px 15px 65px;
+
+    margin-bottom: 15px;
+
+    background: white;
+
+    border-radius: 10px;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+
+}
+
+
+.admission-steps li::before {
+
+    content: counter(admission);
+
+    position: absolute;
+
+    left: 18px;
+
+    top: 17px;
+
+    width: 32px;
+
+    height: 32px;
+
+    border-radius: 50%;
+
+    background: var(--primary);
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-weight: 700;
+
+}
+
+
+.admission-steps strong,
+.admission-steps small {
+
+    display: block;
+
+}
+
+
+.admission-steps small {
+
+    color: var(--muted);
+
+}
+
+
+.form-card {
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: var(--radius);
+
+    box-shadow: var(--shadow);
+
+}
+
+
+/* =========================================================
+   GALLERY
+========================================================= */
+
+.gallery-box {
+
+    height: 280px;
+
+    border-radius: var(--radius);
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: white;
+
+    text-align: center;
+
+    transition: 0.3s;
+
+}
+
+
+.gallery-box:hover {
+
+    transform: scale(1.03);
+
+}
+
+
+.gallery-box i {
+
+    font-size: 60px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.gallery-one {
+
+    background:
+        linear-gradient(
+            rgba(37,99,235,0.85),
+            rgba(30,64,175,0.9)
+        );
+
+}
+
+
+.gallery-two {
+
+    background:
+        linear-gradient(
+            rgba(22,163,74,0.85),
+            rgba(21,128,61,0.9)
+        );
+
+}
+
+
+.gallery-three {
+
+    background:
+        linear-gradient(
+            rgba(147,51,234,0.85),
+            rgba(107,33,168,0.9)
+        );
+
+}
+
+
+/* =========================================================
+   TESTIMONIAL
+========================================================= */
+
+.testimonial-section {
+
+    background: #f1f5f9;
+
+}
+
+
+.testimonial-card {
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: var(--radius);
+
+    height: 100%;
+
+    box-shadow: var(--shadow);
+
+}
+
+
+.stars {
+
+    color: var(--accent);
+
+    letter-spacing: 3px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.testimonial-card strong,
+.testimonial-card small {
+
+    display: block;
+
+}
+
+
+.testimonial-card small {
+
+    color: var(--muted);
+
+}
+
+
+/* =========================================================
+   CONTACT
+========================================================= */
+
+.contact-section {
+
+    background: #0f172a;
+
+    color: white;
+
+}
+
+
+.contact-section h2,
+.contact-section h4,
+.contact-section h5 {
+
+    color: white;
+
+}
+
+
+.contact-section p {
+
+    color: #cbd5e1;
+
+}
+
+
+.contact-map {
+
+    min-height: 280px;
+
+    border-radius: var(--radius);
+
+    background:
+        linear-gradient(
+            135deg,
+            #1e3a8a,
+            #2563eb
+        );
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+}
+
+
+.contact-map h3 {
+
+    color: white;
+
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.footer {
+
+    padding: 60px 0 25px;
+
+    background: #020617;
+
+    color: white;
+
+}
+
+
+.footer h4,
+.footer h5 {
+
+    color: white;
+
+}
+
+
+.footer p {
+
+    color: #94a3b8;
+
+}
+
+
+.footer-links {
+
+    list-style: none;
+
+    padding: 0;
+
+}
+
+
+.footer-links li {
+
+    margin-bottom: 8px;
+
+}
+
+
+.footer-links a {
+
+    text-decoration: none;
+
+    color: #94a3b8;
+
+    transition: 0.3s;
+
+}
+
+
+.footer-links a:hover {
+
+    color: white;
+
+}
+
+
+.social-icons {
+
+    display: flex;
+
+    gap: 15px;
+
+}
+
+
+.social-icons a {
+
+    width: 40px;
+
+    height: 40px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #1e293b;
+
+    color: white;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+
+}
+
+
+.social-icons a:hover {
+
+    background: var(--primary);
+
+    transform: translateY(-3px);
+
+}
+
+
+/* =========================================================
+   BACK TO TOP
+========================================================= */
+
+.back-to-top {
+
+    position: fixed;
+
+    right: 20px;
+
+    bottom: 20px;
+
+    width: 45px;
+
+    height: 45px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: var(--primary);
+
+    color: white;
+
+    display: none;
+
+    z-index: 999;
+
+}
+
+
+.back-to-top:hover {
+
+    background: var(--primary-dark);
+
+}
+
+
+/* =========================================================
+   VALIDATION
+========================================================= */
+
+.input-error {
+
+    border: 2px solid var(--danger) !important;
+
+}
+
+
+.input-success {
+
+    border: 2px solid var(--success) !important;
+
+}
+
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.table {
+
+    background: white;
+
+}
+
+
+.table th {
+
+    white-space: nowrap;
+
+}
+
+
+/* =========================================================
+   MOBILE RESPONSIVENESS
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .hero-section {
+
+        padding-top: 120px;
+
+    }
+
+
+    .hero-section h1 {
+
+        font-size: 2.2rem;
+
+    }
+
+
+    .hero-stats {
+
+        gap: 20px;
+
+    }
+
+
+    .section-padding {
+
+        padding: 60px 0;
+
+    }
+
+
+    .section-heading h2 {
+
+        font-size: 1.8rem;
+
+    }
+
+
+    .hero-card {
+
+        padding: 30px;
+
+    }
+
+
+    .form-card {
+
+        padding: 25px;
+
+    }
+
+
+    .navbar-nav {
+
+        padding-top: 15px;
+
+    }
+
+
+    .navbar .btn {
+
+        margin-top: 10px;
+
+        margin-left: 0 !important;
+
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .hero-section h1 {
+
+        font-size: 2.7rem;
+
+    }
+
+
+    .section-padding {
+
+        padding: 70px 0;
+
+    }
+
+}
+
+
+/* =========================================================
+   LARGE DESKTOP
+========================================================= */
+
+@media (min-width: 1200px) {
+
+    .container {
+
+        max-width: 1180px;
+
+    }
+
+}
